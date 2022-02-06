@@ -1,0 +1,41 @@
+.messageCss {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+
+
+}
+
+.messageCss img {
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.messageCssBlock {
+    color: aqua;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 250px;
+    background-color: rgba(192,192,192, 0.5);
+    position: relative;
+    border-radius: 10px 10px 10px 0px;
+    margin-left: 15px;
+
+}
+
+.messageCssBlock::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, rgba(192,192,192, 0.5) 51%) no-repeat right bottom;
+}
+.time {
+    text-align: right;
+}
