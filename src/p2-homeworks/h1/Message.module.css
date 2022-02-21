@@ -34,7 +34,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: radial-gradient(60px at top left, transparent 49%, rgba(192,192,192, 0.5) 51%) no-repeat right bottom;
+    background: radial-gradient(60px at top left, transparent 50%, rgba(192,192,192, 0.5) 0%) no-repeat right bottom;
 }
 .time {
     text-align: right;

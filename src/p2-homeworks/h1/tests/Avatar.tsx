@@ -10,7 +10,7 @@ type AvatarPropsType = {
 export const Avatar = (props: AvatarPropsType) => {
     return (
         <div>
-            <img src={props.avatar}/>
+            <img src={props.avatar} alt={`avatar`}/>
         </div>
     );
 };
