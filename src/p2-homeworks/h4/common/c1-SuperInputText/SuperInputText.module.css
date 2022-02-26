@@ -1,4 +1,5 @@
 .superInput {
+    background: orange;
 
 }
 
@@ -8,5 +9,5 @@
 }
 
 .error {
-    color: red;
+    color: fuchsia;
 }

@@ -10,14 +10,14 @@ function HW4() {
 
     const showAlert = () => {
         if (error) {
-            alert('введите текст...')
+            alert(`сначала введите текст`)
         } else {
             alert(text) // если нет ошибки показать текст
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const testOnChange = (checked: boolean) => setChecked(checked)
 
     return (
         <div>
@@ -39,7 +39,7 @@ function HW4() {
 
                 {/*----------------------------------------------------*/}
 
-                <SuperButton>
+                <SuperButton onClick={showAlert}>
                     default
                 </SuperButton>
 
@@ -60,11 +60,12 @@ function HW4() {
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
+                    some text {/*                // этот текст попадёт в children*/}
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox checked={checked}
+                               testOnChange={testOnChange}/>
             </div>
 
             <hr/>
