@@ -4,6 +4,7 @@
 
 .error {
     border: 3px solid red;
+    background: lightcoral;
 }
 
 .text_error {
