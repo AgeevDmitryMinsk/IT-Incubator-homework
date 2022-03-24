@@ -1,7 +1,7 @@
 .App {
     background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1614626785_2-p-fon-kosmosa-dlya-fotoshopa-3.jpg');
 
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     padding: 30px;
 

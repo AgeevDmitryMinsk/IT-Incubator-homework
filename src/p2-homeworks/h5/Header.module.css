@@ -1,0 +1,51 @@
+/*.header {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    background: #f447ff;*/
+/*}*/
+
+
+.header{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    height: 32px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background: #f60;
+    color:#fff;
+    padding:5px;
+}
+#slide_in {
+    position: fixed;
+    min-height:10px;
+    top: 10px;
+    left: -270px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    box-shadow:0 0 5px #777;
+    background: #f60;
+    color:#fff;
+    width:280px;
+    padding:10px;
+    /*box-sizing:padding-box;*/
+}
+.header:hover {
+    left: 250px;
+}
+.header:hover #slide_in {
+    left: 0;
+}
+
+.link{
+    padding: 0 10px;
+    text-decoration: none;
+}
+.active {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: greenyellow; /* Ссылка красного цвета */
+}
