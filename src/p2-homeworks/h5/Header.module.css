@@ -41,6 +41,6 @@
 }
 .active {
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
-    color: greenyellow; /* Ссылка красного цвета */
+    color: red; /* Ссылка красного цвета для branch react_router_dom_version_6*/
     padding: 0 10px;
 }
