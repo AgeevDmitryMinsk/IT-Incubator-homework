@@ -1,9 +1,3 @@
-/*.header {*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*    background: #f447ff;*/
-/*}*/
-
 
 .header{
     position: fixed;
@@ -48,4 +42,5 @@
 .active {
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
     color: greenyellow; /* Ссылка красного цвета */
+    padding: 0 10px;
 }

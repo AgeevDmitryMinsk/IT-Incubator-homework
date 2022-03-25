@@ -1,9 +1,14 @@
 import React from 'react'
-import {Redirect, Route, Switch} from "react-router-dom";
+import {
+//	Redirect,
+//	Route,
+//	Switch
+} from "react-router-dom";
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import {Junior} from "./pages/Junior";
 import {JuniorPlus} from "./pages/JuniorPlus";
+import {HashRouter, NavLink, Route, Routes} from "react-router-dom";
 
 export const PATH = {
 	PRE_JUNIOR: '/pre-junior',
@@ -12,26 +17,29 @@ export const PATH = {
 	// add paths
 }
 
-function Routes() {
+function Routes2() {
 	return (
 		<div>
-			{/*Switch выбирает первый подходящий роут*/}
+			{/*Switch выбирает первый подходящий роут для версии "react-router-dom": "5.3.0"* /}
 			<Switch>
 
-				{/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
-				{/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
-				<Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
+			{/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
+			{/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
+			<Routes>
+				<Route path={'/'} element={<PreJunior/>}/>
 
-				<Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
-				<Route path={PATH.JUNIOR} render={() => <Junior/>}/>
-				<Route path={PATH.JUNIOR_PLUS} render={() => <JuniorPlus/>}/>
+				<Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
+				<Route path={PATH.JUNIOR} element={<Junior/>}/>
+				<Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
 
 				{/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-				<Route render={() => <Error404/>}/>
+				<Route element={<Error404/>}/>
+			</Routes>
 
-			</Switch>
+
+			{/*</Switch>*/}
 		</div>
 	)
 }
 
-export default Routes
+export default Routes2
