@@ -56,7 +56,7 @@ function HW6() {
 			please, select city:
 			<select value={parentValue} onChange={onChangeSelectHandler}>
 				<option>none</option>
-				{cities.map((el, index)=> <option value={index}>{el}</option>)}
+				{cities.map((el, index)=> <option value={index} key={index}>{el}</option>)}
 				{/*<option value={`1`}>Minsk</option>*/}
 				{/*<option value={`2`}>Moscow</option>*/}
 				{/*<option value={`3`}>Warsaw</option>*/}
