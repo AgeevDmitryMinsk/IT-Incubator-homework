@@ -1,0 +1,11 @@
+.span_beautiful_CSS {
+    display: inline-block;
+    height: 25px;
+    padding: 10px 10px;
+    background: palevioletred;
+    cursor: pointer;
+}
+
+.span_beautiful_CSS:hover {
+    box-shadow: -0.3em 0.3em 0.3em .3em chartreuse;
+}
