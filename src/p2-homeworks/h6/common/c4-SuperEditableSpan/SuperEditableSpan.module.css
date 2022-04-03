@@ -1,7 +1,8 @@
 .span_beautiful_CSS {
     display: inline-block;
-    height: 25px;
-    padding: 10px 10px;
+    height: 21px;
+
+    /*padding: 1px 1px;*/
     background: palevioletred;
     cursor: pointer;
 }
